@@ -14,17 +14,17 @@
     <form action="{{url_for('home')}}" method="post">
         {{form.hidden_tag()}}
         <p>{{form.name.label(class_="text")}}</p>
-        <p> {{form.name(class_="input-box")}}</p>
+        <p> {{form.name(class_="input-box",placeholder="Enter your full name")}}</p>
         <p> {{form.mobile.label(class_="text")}}</p>
-        <p> {{form.mobile(class_="input-box",novalidate=True)}}</p>
+        <p> {{form.mobile(class_="input-box",placeholder="07123456789)}}</p>
         <p> {{form.email.label(class_="text")}}</p>
-        <p> {{form.email(class_="input-box")}}</p>
+        <p> {{form.email(class_="input-box",placeholder="example@gmail.com")}}</p>
         <p>{{form.address.label(class_="text")}}</p>
-        <p> {{form.address(class_="input-box")}}</p>
+        <p> {{form.address(class_="input-box",placeholder="Enter your address")}}</p>
         <p>{{form.city.label(class_="text")}}</p>
-        <p> {{form.city(class_="input-box")}}</p>
+        <p> {{form.city(class_="input-box",placeholder="Enter your city")}}</p>
         <p>{{form.postcode.label(class_="text")}}</p>
-        <p> {{form.postcode(class_="input-box")}}</p>
+        <p> {{form.postcode(class_="input-box",placeholder="Enter your postcode")}}</p>
        
 
 
